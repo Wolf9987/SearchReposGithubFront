@@ -1,0 +1,15 @@
+
+<div class="responsive">
+    <div class="gallery">
+        <img [src]="item.avatar_url" altlt="api image">
+      <div 
+        class="desc">{{item.name}}
+        <button mat-icon-button (click)="updateSession(item)">
+            <mat-icon *ngIf="!item.isInSession" >star_border</mat-icon>
+            <mat-icon *ngIf="item.isInSession" >star</mat-icon>
+        </button>
+     </div>
+      
+    </div>
+  </div>
+

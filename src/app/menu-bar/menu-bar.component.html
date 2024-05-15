@@ -1,0 +1,6 @@
+<mat-toolbar>
+    <button *ngIf="!isUserLogin()" routerLink="" mat-button>Login</button>
+    <button  *ngIf="!isUserLogin()" routerLink="signUp" mat-button>SignUp</button>
+    <button *ngIf="isUserLogin()" routerLink="searchRepos" mat-button>Search Repositories</button>
+    <button *ngIf="isUserLogin()" routerLink="" mat-button (click)="onLogout()">Logout</button>
+</mat-toolbar>

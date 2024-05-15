@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-header>
+            <input #searchInput type="text" ngModel name="name" class="form-control" id="name" style="width: 50%"
+            (keyup.enter)="searchRepos(searchInput.value)" 
+            aria-label="Search"
+            matInput
+            >
+            <button mat-raised-button (click)="searchRepos(searchInput.value)">Go</button> 
+    </mat-card-header>
+    <mat-card-content>
+        <app-gallery-item *ngFor="let item of repolist" [item] = "item">
+        </app-gallery-item>
+    </mat-card-content>
+</mat-card>
