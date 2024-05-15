@@ -1,5 +1,5 @@
 # SearchReposGithubFront
-Angular, Jwt, Session management, Angular Material, reactive forms
+Angular, Jwt, Session management, Angular Material, Reactive Forms
 
 
 # Github repository search with jwt login front part
